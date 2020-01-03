@@ -23,6 +23,12 @@ impl std::convert::From<i32> for Fraction {
     }
 }
 
+impl<'a, 'b> PartialEq<Fraction> for Fraction {
+    fn eq(&self, other: &Fraction) -> bool {
+        return self.numerator == other.numerator && self.denominator == other.denominator;
+    }
+}
+
 impl Fraction {
     pub fn new() -> Self {
         Fraction {

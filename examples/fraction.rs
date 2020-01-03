@@ -6,4 +6,5 @@ fn main() {
     my_fraction.numerator = 3;
     let derived_fraction = rust_compute::Fraction::from(4);
     println!("Defined: {}       Derived: {}", my_fraction, derived_fraction);
+    println!("{}", my_fraction != derived_fraction)
 }
